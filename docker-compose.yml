@@ -1,0 +1,10 @@
+version: '3'
+services:
+  devops:
+    image: satishjagana/engineeringrepo
+    ports:
+      - "910"
+    volumes:
+      - "devopsvol"
+    deploy:
+      replicas: 3
