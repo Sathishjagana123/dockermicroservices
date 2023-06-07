@@ -3,7 +3,7 @@ services:
   devops:
     image: satishjagana/engineeringrepo
     ports:
-      - "910"
+      - "91:80"
     volumes:
       - "devopsvol"
     deploy:
