@@ -5,6 +5,6 @@ services:
     ports:
       - "91:80"
     volumes:
-      - "cyientvol"
+      - "sunmobitech"
     deploy:
       replicas: 3
