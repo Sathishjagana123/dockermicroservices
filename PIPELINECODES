@@ -1,0 +1,27 @@
+pipeline {
+    agent any 
+    
+    stages {
+        stage('checkout') {
+            steps {
+                git 'https://github.com/Sathishjagana123/dockermicroservices.git'
+            }
+        }
+        stage('build') {
+            steps {
+                sh 'docker build -t $img .'
+            }
+        }
+        stage('tag') {
+            steps {
+                sh 'docker tag $img $repo'
+            }
+        }
+        stage('push') {
+            steps {
+                sh 'docker login -u satishjagana  -p Pavani@121 '
+                sh 'docker push $repo'
+            }
+        }
+    }
+}
