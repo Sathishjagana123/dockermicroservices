@@ -1,7 +1,7 @@
 version: '3'
 services:
   cyient:
-    image: satishjagana/engineeringrepo
+    image: satishjagana/sunmobitech
     ports:
       - "91:80"
     volumes:
