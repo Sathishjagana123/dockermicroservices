@@ -1,10 +1,8 @@
 version: '3'
 services:
-  cyient:
-    image: satishjagana/engineeringrepo
+  swiggy:
+    image: satishjagana/swiggy:latest
     ports:
-      - "91:80"
-    volumes:
-      - "sunmobitech"
+      - "71:80"
     deploy:
       replicas: 3
